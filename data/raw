@@ -1,0 +1,19 @@
+# N100 Financial Intelligence Platform
+
+## Overview
+This project analyzes all Nifty 100 companies using Python, SQLite, and Streamlit.
+
+## Sprint 1
+- Environment Setup
+- Data Ingestion
+- ETL Pipeline
+- SQLite Database
+- Data Validation
+
+## Tech Stack
+- Python
+- Pandas
+- NumPy
+- SQLite
+- Streamlit
+- Plotly
