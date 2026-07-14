@@ -3,3 +3,6 @@
 2026-07-14 21:00:28,378 | INFO | Running src/etl/validator.py
 2026-07-14 21:00:29,729 | INFO | src/etl/validator.py SUCCESS
 2026-07-14 21:00:29,731 | INFO | Pipeline Finished Successfully
+2026-07-14 22:18:48,396 | INFO | Pipeline Started Successfully
+2026-07-14 22:18:54,666 | WARNING | Testing Logger
+2026-07-14 22:19:01,542 | ERROR | Dummy Error

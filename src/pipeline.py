@@ -6,6 +6,7 @@ Main ETL Pipeline
 
 import logging
 from pathlib import Path
+from src.utils.logger import logger
 import subprocess
 import sys
 
