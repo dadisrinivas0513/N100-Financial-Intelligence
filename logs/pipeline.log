@@ -7,3 +7,10 @@
 2026-07-14 22:18:54,666 | WARNING | Testing Logger
 2026-07-14 22:19:01,542 | ERROR | Dummy Error
 2026-07-14 22:33:09,535 | INFO | Sprint 1 Verification
+2026-07-14 22:45:05,924 | INFO | Running src/etl/loader.py
+2026-07-14 22:45:06,097 | ERROR | src/etl/loader.py FAILED
+2026-07-14 22:55:01,518 | INFO | Running src/etl/loader.py
+2026-07-14 22:55:04,616 | INFO | src/etl/loader.py SUCCESS
+2026-07-14 22:55:04,616 | INFO | Running src/etl/validator.py
+2026-07-14 22:55:06,698 | INFO | src/etl/validator.py SUCCESS
+2026-07-14 22:55:06,698 | INFO | Pipeline Finished Successfully
