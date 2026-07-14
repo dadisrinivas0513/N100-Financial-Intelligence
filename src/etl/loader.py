@@ -1,63 +1,110 @@
 """
 loader.py
 
-Loads all Excel datasets from data/raw
-for the N100 Financial Intelligence Platform.
+Universal ETL Loader
 """
 
 from pathlib import Path
+import sqlite3
 import pandas as pd
 
-from normaliser import normalize_year, normalize_ticker
-
-# Project root
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-# Raw data folder
 RAW_FOLDER = PROJECT_ROOT / "data" / "raw"
 
-# Dictionary to store DataFrames
-datasets = {}
+DB_PATH = PROJECT_ROOT / "database" / "n100.db"
 
-print("=" * 60)
-print("N100 Financial Intelligence - ETL Loader")
-print("=" * 60)
 
-# Read every Excel file
-for file in RAW_FOLDER.glob("*.xlsx"):
+# =====================================================
+# Universal Excel Reader
+# =====================================================
 
-    print(f"\nLoading: {file.name}")
+def load_excel(file_path):
 
-    try:
-        df = pd.read_excel(file, header=1)
+    file_path = Path(file_path)
 
-        # Normalize columns if present
-        if "id" in df.columns:
-            df["id"] = df["id"].apply(normalize_ticker)
+    if file_path.stem == "companies":
+        df = pd.read_excel(file_path, header=1)
 
-        if "ticker" in df.columns:
-            df["ticker"] = df["ticker"].apply(normalize_ticker)
+    else:
 
-        if "year" in df.columns:
-            df["year"] = df["year"].apply(normalize_year)
+        df = pd.read_excel(file_path)
 
-        datasets[file.stem] = df
+        if (
+            "Unnamed: 1" in df.columns
+            or str(df.columns[0]).startswith("Bluestock")
+        ):
+            df = pd.read_excel(file_path, header=1)
 
-        print(f"Rows    : {len(df)}")
-        print(f"Columns : {len(df.columns)}")
-        print("Status  : Loaded Successfully")
+    df.columns = (
+        df.columns.astype(str)
+        .str.strip()
+        .str.lower()
+        .str.replace(" ", "_")
+    )
 
-    except Exception as e:
-        print(f"Error loading {file.name}")
-        print(e)
+    return df
 
-print("\n" + "=" * 60)
-print("Summary")
-print("=" * 60)
 
-print(f"Datasets Loaded : {len(datasets)}")
+# =====================================================
+# Build SQLite Database
+# =====================================================
 
-for name, df in datasets.items():
-    print(f"{name:<22} {df.shape}")
+def build_database():
 
-print("=" * 60)
+    print("=" * 80)
+    print("N100 Financial Intelligence")
+    print("ETL Loader")
+    print("=" * 80)
+
+    conn = sqlite3.connect(DB_PATH)
+
+    loaded_tables = []
+
+    for file in sorted(RAW_FOLDER.glob("*.xlsx")):
+
+        print(f"\nLoading {file.name}")
+
+        try:
+
+            df = load_excel(file)
+
+            table = file.stem.lower()
+
+            df.to_sql(
+                table,
+                conn,
+                if_exists="replace",
+                index=False
+            )
+
+            loaded_tables.append(table)
+
+            print(f"Rows   : {len(df)}")
+            print(f"Cols   : {len(df.columns)}")
+            print("Status : Loaded")
+
+        except Exception as e:
+
+            print("FAILED")
+            print(e)
+
+    conn.commit()
+    conn.close()
+
+    print("\n" + "=" * 80)
+    print("DATABASE CREATED")
+    print("=" * 80)
+
+    print(f"Database : {DB_PATH}")
+
+    print("\nTables Loaded")
+
+    for table in loaded_tables:
+        print("✓", table)
+
+    print("=" * 80)
+
+
+if __name__ == "__main__":
+    build_database()

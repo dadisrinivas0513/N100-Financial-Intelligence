@@ -1,0 +1,361 @@
+Rule,Severity,Dataset,Row,Message
+DQ-02,CRITICAL,profitandloss,49,ADANIPORTS 2013
+DQ-02,CRITICAL,profitandloss,50,ADANIPORTS 2014
+DQ-02,CRITICAL,profitandloss,51,ADANIPORTS 2015
+DQ-02,CRITICAL,profitandloss,52,ADANIPORTS 2016
+DQ-02,CRITICAL,profitandloss,53,ADANIPORTS 2017
+DQ-02,CRITICAL,profitandloss,54,ADANIPORTS 2018
+DQ-02,CRITICAL,profitandloss,55,ADANIPORTS 2019
+DQ-02,CRITICAL,profitandloss,56,ADANIPORTS 2020
+DQ-02,CRITICAL,profitandloss,57,ADANIPORTS 2021
+DQ-02,CRITICAL,profitandloss,58,ADANIPORTS 2022
+DQ-02,CRITICAL,profitandloss,59,ADANIPORTS 2023
+DQ-02,CRITICAL,profitandloss,60,ADANIPORTS 2024
+DQ-02,CRITICAL,profitandloss,61,ADANIPORTS nan
+DQ-02,CRITICAL,profitandloss,62,ADANIPORTS 2013
+DQ-02,CRITICAL,profitandloss,63,ADANIPORTS 2014
+DQ-02,CRITICAL,profitandloss,64,ADANIPORTS 2015
+DQ-02,CRITICAL,profitandloss,65,ADANIPORTS 2016
+DQ-02,CRITICAL,profitandloss,66,ADANIPORTS 2017
+DQ-02,CRITICAL,profitandloss,67,ADANIPORTS 2018
+DQ-02,CRITICAL,profitandloss,68,ADANIPORTS 2019
+DQ-02,CRITICAL,profitandloss,69,ADANIPORTS 2020
+DQ-02,CRITICAL,profitandloss,70,ADANIPORTS 2021
+DQ-02,CRITICAL,profitandloss,71,ADANIPORTS 2022
+DQ-02,CRITICAL,profitandloss,72,ADANIPORTS 2023
+DQ-02,CRITICAL,profitandloss,73,ADANIPORTS 2024
+DQ-02,CRITICAL,profitandloss,74,ADANIPORTS nan
+DQ-03,CRITICAL,profitandloss,1166,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1167,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1168,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1169,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1170,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1171,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1172,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1173,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1174,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1175,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1176,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1177,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1178,Unknown Company : ULTRACEMCO
+DQ-03,CRITICAL,profitandloss,1179,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1180,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1181,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1182,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1183,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1184,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1185,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1186,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1187,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1188,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1189,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1190,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1191,Unknown Company : UNIONBANK
+DQ-03,CRITICAL,profitandloss,1192,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1193,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1194,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1195,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1196,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1197,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1198,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1199,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1200,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1201,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1202,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1203,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1204,Unknown Company : UNITDSPR
+DQ-03,CRITICAL,profitandloss,1205,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1206,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1207,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1208,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1209,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1210,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1211,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1212,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1213,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1214,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1215,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1216,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1217,Unknown Company : VBL
+DQ-03,CRITICAL,profitandloss,1218,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1219,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1220,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1221,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1222,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1223,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1224,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1225,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1226,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1227,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1228,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1229,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1230,Unknown Company : VEDL
+DQ-03,CRITICAL,profitandloss,1231,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1232,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1233,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1234,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1235,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1236,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1237,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1238,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1239,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1240,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1241,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1242,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1243,Unknown Company : WIPRO
+DQ-03,CRITICAL,profitandloss,1244,Unknown Company : ZOMATO
+DQ-03,CRITICAL,profitandloss,1245,Unknown Company : ZOMATO
+DQ-03,CRITICAL,profitandloss,1246,Unknown Company : ZOMATO
+DQ-03,CRITICAL,profitandloss,1247,Unknown Company : ZOMATO
+DQ-03,CRITICAL,profitandloss,1248,Unknown Company : ZOMATO
+DQ-03,CRITICAL,profitandloss,1249,Unknown Company : ZOMATO
+DQ-03,CRITICAL,profitandloss,1250,Unknown Company : ZOMATO
+DQ-03,CRITICAL,profitandloss,1251,Unknown Company : ZOMATO
+DQ-03,CRITICAL,profitandloss,1252,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1253,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1254,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1255,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1256,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1257,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1258,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1259,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1260,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1261,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1262,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1263,Unknown Company : ZYDUSLIFE
+DQ-03,CRITICAL,profitandloss,1264,Unknown Company : ZYDUSLIFE
+DQ-05,WARNING,profitandloss,25,ADANIENSOL OPM mismatch
+DQ-05,WARNING,profitandloss,148,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,149,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,150,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,151,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,152,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,153,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,154,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,155,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,156,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,157,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,158,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,159,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,160,AXISBANK OPM mismatch
+DQ-05,WARNING,profitandloss,187,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,188,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,189,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,190,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,191,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,192,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,193,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,194,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,195,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,196,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,197,BAJFINANCE OPM mismatch
+DQ-05,WARNING,profitandloss,198,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,199,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,200,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,201,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,202,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,203,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,204,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,205,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,206,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,207,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,208,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,209,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,210,BANKBARODA OPM mismatch
+DQ-05,WARNING,profitandloss,289,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,290,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,291,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,292,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,293,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,294,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,295,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,296,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,297,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,298,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,299,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,300,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,301,CANBK OPM mismatch
+DQ-05,WARNING,profitandloss,302,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,303,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,304,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,305,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,306,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,307,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,308,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,309,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,310,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,311,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,312,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,313,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,314,CHOLAFIN OPM mismatch
+DQ-05,WARNING,profitandloss,315,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,316,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,317,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,318,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,319,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,320,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,321,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,322,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,323,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,324,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,325,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,326,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,327,CIPLA OPM mismatch
+DQ-05,WARNING,profitandloss,328,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,329,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,330,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,331,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,332,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,333,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,334,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,335,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,336,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,337,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,338,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,339,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,340,COALINDIA OPM mismatch
+DQ-05,WARNING,profitandloss,497,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,498,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,499,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,500,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,501,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,502,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,503,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,504,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,505,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,506,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,507,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,508,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,509,HDFCBANK OPM mismatch
+DQ-05,WARNING,profitandloss,510,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,511,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,512,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,513,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,514,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,515,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,516,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,517,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,518,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,519,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,520,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,521,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,522,HDFCLIFE OPM mismatch
+DQ-05,WARNING,profitandloss,523,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,524,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,525,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,526,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,527,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,528,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,529,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,530,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,531,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,532,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,533,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,534,HEROMOTOCO OPM mismatch
+DQ-05,WARNING,profitandloss,535,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,536,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,537,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,538,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,539,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,540,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,541,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,542,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,543,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,544,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,545,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,546,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,547,HINDALCO OPM mismatch
+DQ-05,WARNING,profitandloss,548,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,549,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,550,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,551,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,552,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,553,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,554,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,555,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,556,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,557,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,558,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,559,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,560,HINDUNILVR OPM mismatch
+DQ-05,WARNING,profitandloss,561,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,562,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,563,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,564,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,565,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,566,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,567,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,568,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,569,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,570,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,571,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,572,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,573,ICICIBANK OPM mismatch
+DQ-05,WARNING,profitandloss,574,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,575,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,576,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,577,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,578,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,579,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,580,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,581,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,582,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,583,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,584,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,585,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,586,ICICIGI OPM mismatch
+DQ-05,WARNING,profitandloss,587,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,588,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,589,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,590,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,591,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,592,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,593,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,594,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,595,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,596,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,597,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,598,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,599,ICICIPRULI OPM mismatch
+DQ-05,WARNING,profitandloss,600,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,601,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,602,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,603,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,604,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,605,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,606,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,607,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,608,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,609,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,610,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,611,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,612,INDUSINDBK OPM mismatch
+DQ-05,WARNING,profitandloss,689,JIOFIN OPM mismatch
+DQ-05,WARNING,profitandloss,718,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,719,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,720,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,721,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,722,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,723,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,724,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,725,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,726,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,727,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,728,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,729,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,730,KOTAKBANK OPM mismatch
+DQ-05,WARNING,profitandloss,1034,SUNPHARMA OPM mismatch
+DQ-05,WARNING,profitandloss,1265,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1266,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1267,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1268,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1269,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1270,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1271,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1272,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1273,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1274,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1275,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1276,INDIGO OPM mismatch
+DQ-05,WARNING,profitandloss,1277,INDIGO OPM mismatch
+DQ-06,CRITICAL,profitandloss,15,ADANIENSOL Negative Sales
