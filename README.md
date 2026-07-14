@@ -1,29 +1,45 @@
-# 📊 N100 Financial Intelligence
+# 📈 N100 Financial Intelligence
 
-A professional **ETL (Extract – Transform – Load) pipeline** for processing and validating financial datasets of **Nifty 100 companies**.
-
-The project automates data ingestion from Excel files, performs data quality validation, normalizes financial data, and stores it in an SQLite database for analytics.
+A professional Data Engineering project that builds a complete ETL (Extract–Transform–Load) pipeline for analyzing financial data of Nifty 100 companies. The project ingests multiple Excel datasets, validates data quality, stores cleaned data into SQLite, and prepares the foundation for financial analytics dashboards.
 
 ---
 
-# 🚀 Features
+# 🚀 Project Overview
 
-- Automated Excel Loader
+The N100 Financial Intelligence Platform is designed to automate financial data processing using Python and SQLite.
+
+The pipeline performs:
+
+- Data Extraction
+- Data Cleaning
+- Data Validation
 - Data Normalization
-- Data Quality Validation (DQ Rules)
-- SQLite Database Loader
-- Logging Support
-- End-to-End ETL Pipeline
-- SQL Query Support
-- Validation Report Generation
-- Modular Project Structure
+- Database Loading
+- Reporting
+- Logging
+
+The project is developed following modular Data Engineering practices.
+
+---
+
+# 🎯 Sprint 1 Objectives
+
+- ✔ Load multiple Excel datasets
+- ✔ Standardize column names
+- ✔ Normalize financial data
+- ✔ Perform Data Quality validation
+- ✔ Store datasets into SQLite
+- ✔ Generate validation reports
+- ✔ Build reusable ETL pipeline
+- ✔ Implement logging
 
 ---
 
 # 📂 Project Structure
 
-```text
+```
 N100-Financial-Intelligence/
+
 │
 ├── data/
 │   ├── raw/
@@ -47,18 +63,15 @@ N100-Financial-Intelligence/
 ├── src/
 │   ├── pipeline.py
 │   │
-│   ├── etl/
-│   │   ├── loader.py
-│   │   ├── validator.py
-│   │   ├── dq_rules.py
-│   │   ├── normalizer.py
-│   │   └── inspect_datasets.py
+│   ├── utils/
+│   │     logger.py
 │   │
-│   └── utils/
-│       ├── logger.py
-│       └── __init__.py
-│
-├── tests/
+│   └── etl/
+│         loader.py
+│         validator.py
+│         dq_rules.py
+│         normalizer.py
+│         inspect_datasets.py
 │
 ├── requirements.txt
 ├── README.md
@@ -67,66 +80,61 @@ N100-Financial-Intelligence/
 
 ---
 
-# 📁 Datasets
+# 📊 Datasets
 
-The ETL pipeline processes the following datasets:
+The ETL pipeline processes:
 
-| Dataset | Description |
-|----------|-------------|
-| analysis | Company growth analysis |
-| balancesheet | Balance Sheet |
-| cashflow | Cash Flow Statement |
-| companies | Company Master |
-| documents | Annual Reports |
-| financial_ratios | Financial Ratios |
-| market_cap | Market Capitalization |
-| peer_groups | Peer Group Mapping |
-| profitandloss | Profit & Loss Statement |
-| prosandcons | Pros & Cons |
-| sectors | Sector Information |
-| stock_prices | Historical Stock Prices |
+- companies
+- balancesheet
+- cashflow
+- profitandloss
+- stock_prices
+- market_cap
+- financial_ratios
+- sectors
+- documents
+- peer_groups
+- analysis
+- prosandcons
 
 ---
 
-# ⚙️ ETL Workflow
+# ⚙ ETL Pipeline
 
-## 1. Extract
+## Step 1 — Extract
 
-- Load Excel datasets
+- Read Excel datasets
 - Detect headers
-- Clean column names
+- Standardize columns
 
-## 2. Transform
+## Step 2 — Transform
 
-- Normalize company IDs
-- Normalize dates
-- Normalize years
-- Normalize numeric values
-- Normalize text
-- Normalize boolean values
+- Normalize Company IDs
+- Normalize Years
+- Normalize Numbers
+- Normalize Text
+- Normalize Boolean values
 
-## 3. Validate
+## Step 3 — Validate
 
-The validator executes multiple Data Quality Rules:
+Current Validation Rules
 
-- DQ-01 Missing Values
-- DQ-02 Duplicate Records
-- DQ-03 Foreign Key Validation
-- DQ-04 Numeric Validation
-- DQ-05 Year Validation
-- DQ-06 Business Rule Validation
+- Missing Values
+- Duplicate Records
+- Invalid Years
+- Business Rule Validation
+- Numeric Validation
+- Foreign Key Validation
 
-Validation results are exported to:
+Validation Report
 
 ```
 output/validation_failures.csv
 ```
 
----
+## Step 4 — Load
 
-## 4. Load
-
-All validated datasets are stored in:
+All cleaned datasets are loaded into
 
 ```
 database/n100.db
@@ -134,7 +142,9 @@ database/n100.db
 
 ---
 
-# 🗄 Database Tables
+# 🗄 SQLite Database
+
+Created Tables
 
 - analysis
 - balancesheet
@@ -151,63 +161,61 @@ database/n100.db
 
 ---
 
-# 📋 Technologies Used
+# 📈 Logging
+
+Pipeline logs are generated automatically.
+
+```
+logs/pipeline.log
+```
+
+---
+
+# 🛠 Technologies Used
 
 - Python 3.13
 - Pandas
 - SQLite
-- OpenPyXL
 - SQLAlchemy
+- OpenPyXL
 - Git
 - GitHub
 
 ---
 
-# ▶️ Installation
+# ▶ Running the Project
 
-Clone the repository:
-
-```bash
-git clone https://github.com/dadisrinivas0513/N100-Financial-Intelligence.git
-```
-
-Create a virtual environment:
+Create Environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate it:
-
-Windows:
+Activate
 
 ```bash
 venv\Scripts\activate
 ```
 
-Install dependencies:
+Install Packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-# ▶️ Run Individual Modules
-
-Load Data:
+Run Loader
 
 ```bash
 python src/etl/loader.py
 ```
 
-Validate Data:
+Run Validator
 
 ```bash
 python src/etl/validator.py
 ```
 
-Run Complete Pipeline:
+Run Pipeline
 
 ```bash
 python src/pipeline.py
@@ -215,44 +223,41 @@ python src/pipeline.py
 
 ---
 
-# 📄 Output Files
+# 📄 Outputs
 
-Generated automatically:
+Generated automatically
 
-- database/n100.db
-- output/validation_failures.csv
-- logs/pipeline.log
+- SQLite Database
+- Validation Report
+- Pipeline Logs
 
 ---
 
-# 📈 Current Progress
+# 📌 Sprint 1 Status
 
 | Module | Status |
-|---------|--------|
-| Folder Structure | ✅ |
-| Excel Loader | ✅ |
+|----------|--------|
+| ETL Loader | ✅ |
 | SQLite Loader | ✅ |
 | Data Validation | ✅ |
-| DQ Rules | ✅ |
+| Normalization | ✅ |
 | Logger | ✅ |
 | SQL Queries | ✅ |
-| Pipeline | ✅ |
-| Sprint 1 | ✅ Completed |
+| Documentation | ✅ |
 
 ---
 
-# 🚀 Future Enhancements
+# 🚀 Sprint 2
 
-- PostgreSQL Support
-- MySQL Support
+Upcoming Features
+
+- KPI Engine
+- Company Ranking
+- Financial Health Score
+- Sector Analysis
 - Streamlit Dashboard
-- Financial KPI Engine
-- Investment Health Score
-- Sector Analytics
-- Peer Comparison
-- Docker Deployment
-- CI/CD Integration
-- Cloud Deployment (AWS)
+- Investment Screener
+- API Development
 
 ---
 
@@ -260,34 +265,24 @@ Generated automatically:
 
 **Dadi Srinivas**
 
-B.Tech – Computer Science & Engineering
+B.Tech Computer Science & Engineering
 
 Sanketika Vidya Parishad Engineering College
 
-📍 Visakhapatnam, Andhra Pradesh
+Visakhapatnam, Andhra Pradesh
 
----
-
-## 🌐 Connect With Me
-
-**GitHub**
+GitHub
 
 https://github.com/dadisrinivas0513
 
-**LinkedIn**
+LinkedIn
 
 https://www.linkedin.com/in/dadi-srinivas-05m032005
 
-**Portfolio**
+Portfolio
 
 https://dadisrinivas.vercel.app
 
 ---
 
-# 📜 License
-
-This project was developed as part of a Data Engineering internship and is intended for educational and portfolio purposes.
-
----
-
-⭐ If you found this project useful, consider giving it a star on GitHub!
+⭐ Developed as part of a Financial Data Engineering Internship Project.
