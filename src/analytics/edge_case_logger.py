@@ -1,70 +1,117 @@
 """
 edge_case_logger.py
 
-Sprint 2
-Day 13
+Logs ratio anomalies for manual review.
 """
 
 import sqlite3
-import pandas as pd
 
-DB = "database/n100.db"
+DB_PATH = "database/n100.db"
 
 
-conn = sqlite3.connect(DB)
+def generate_edge_case_log():
 
-companies = pd.read_sql(
-    "SELECT * FROM companies",
-    conn
+    conn = sqlite3.connect(DB_PATH)
+    cur = conn.cursor()
+
+    rows = []
+
+    cur.execute("""
+    SELECT
+    fr.company_id,
+    fr.year,
+    fr.return_on_equity_pct,
+    c.roe_percentage,
+    fr.return_on_capital_employed_pct,
+    c.roce_percentage
+    FROM financial_ratios fr
+    JOIN companies c
+    ON fr.company_id = c.id
+    """)
+
+    for row in cur.fetchall():
+
+        company = row[0]
+        year = row[1]
+
+        roe_calc = row[2]
+        roe_source = row[3]
+
+        roce_calc = row[4]
+        roce_source = row[5]
+
+        if (
+            roe_calc is not None
+            and roe_source is not None
+            and abs(roe_calc - roe_source) > 5
+        ):
+            rows.append(
+    f"""
+============================================================
+Company  : {company}
+Year     : {year}
+
+Metric   : ROE
+
+Calculated Value : {roe_calc}
+Source Value     : {roe_source}
+
+Difference : {round(abs(roe_calc-roe_source),2)}
+
+Category   : Source Data Issue
+
+Explanation:
+Computed ROE differs from companies.xlsx.
+Ratio Engine calculation retained.
+Source value kept for reference.
+
+------------------------------------------------------------
+"""
+)
+        if (
+            roce_calc is not None
+            and roce_source is not None
+            and abs(roce_calc - roce_source) > 5
+        ):
+            rows.append(
+    f"""
+============================================================
+Company  : {company}
+Year     : {year}
+
+Metric   : ROCE
+
+Calculated Value : {roce_calc}
+Source Value     : {roce_source}
+
+Difference : {round(abs(roce_calc-roce_source),2)}
+
+Category   : Version Difference
+
+Explanation:
+Calculated ROCE differs from the source file.
+Likely due to reporting-period or formula differences.
+
+------------------------------------------------------------
+"""
 )
 
-ratios = pd.read_sql(
-    "SELECT * FROM financial_ratios",
-    conn
-)
+    conn.close()
 
-conn.close()
+    with open(
+        "output/ratio_edge_cases.log",
+        "w",
+        encoding="utf-8",
+    ) as f:
 
+        for line in rows:
+            f.write(line + "\n")
 
-log = []
-
-
-for _, company in companies.iterrows():
-
-    cid = company["id"]
-
-    source_roe = company["roe_percentage"]
-    source_roce = company["roce_percentage"]
-
-    company_ratio = ratios[
-        ratios["company_id"] == cid
-    ]
-
-    if len(company_ratio) == 0:
-        continue
-
-    calc_roe = company_ratio[
-        "return_on_equity_pct"
-    ].mean()
-
-    if abs(calc_roe - source_roe) > 5:
-
-        log.append(
-            f"{cid} | ROE | Source={source_roe} | Engine={round(calc_roe,2)}"
-        )
+    print("=" * 80)
+    print("EDGE CASE LOG GENERATED")
+    print("=" * 80)
+    print("Total Issues :", len(rows))
 
 
-with open(
-    "output/ratio_edge_cases.log",
-    "w",
-    encoding="utf-8"
-) as f:
-
-    for line in log:
-        f.write(line + "\n")
-
-
-print("=" * 70)
-print("EDGE CASE LOG GENERATED")
-print("=" * 70)
-print("Entries :", len(log))
+if __name__ == "__main__":
+    generate_edge_case_log()

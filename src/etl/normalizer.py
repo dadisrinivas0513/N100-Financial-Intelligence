@@ -155,3 +155,22 @@ def normalize_boolean(value):
         "1",
         "y"
     ]
+
+# ==========================================================
+# Normalize Ticker
+# ==========================================================
+
+def normalize_ticker(value):
+    """
+    Converts ticker names into standard uppercase format.
+
+    Examples:
+        "tcs" -> "TCS"
+        " infy " -> "INFY"
+        "Reliance" -> "RELIANCE"
+    """
+
+    if pd.isna(value):
+        return None
+
+    return str(value).strip().upper()

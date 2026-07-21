@@ -7,7 +7,7 @@ sys.path.append(str(PROJECT_ROOT))
 
 import pytest
 
-from src.etl.normaliser import normalize_year, normalize_ticker
+from src.etl.normalizer import normalize_year, normalize_ticker
 # -------------------------
 # normalize_year Tests
 # -------------------------

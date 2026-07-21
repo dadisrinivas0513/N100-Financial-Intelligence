@@ -51,10 +51,12 @@ def cfo_quality_score(cfo_list, pat_list):
 
     return round(score, 2), label
 
-
 def capex_intensity(investing_activity, sales):
     """
     CapEx Intensity
+
+    Formula:
+    abs(Investing Activity) / Sales × 100
     """
 
     if sales == 0:

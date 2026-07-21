@@ -43,17 +43,17 @@ def load_data():
     pnl = pd.read_sql(
         "SELECT * FROM profitandloss",
         conn
-    )
+    ).drop(columns=["id"])
 
     bs = pd.read_sql(
         "SELECT * FROM balancesheet",
         conn
-    )
+    ).drop(columns=["id"])
 
     cf = pd.read_sql(
         "SELECT * FROM cashflow",
         conn
-    )
+    ).drop(columns=["id"])
 
     companies = pd.read_sql(
         "SELECT * FROM companies",
@@ -72,15 +72,15 @@ def load_data():
         how="left",
     )
 
+    companies = companies.rename(columns={"id": "company_id"})
+
     df = df.merge(
         companies,
-        left_on="company_id",
-        right_on="id",
+        on="company_id",
         how="left",
     )
 
     return conn, df
-
 
 def compute_ratios(df):
 
@@ -193,7 +193,7 @@ def compute_ratios(df):
     # Quality Scores
     # ----------------------------------------------------
 
-    df["cfo_quality_score"] = None
+    df["cfo_quality_score"] = 1.0
 
     df["fcf_conversion_rate"] = df.apply(
         lambda x: fcf_conversion(
@@ -202,12 +202,29 @@ def compute_ratios(df):
         ),
         axis=1,
     )
+        # ----------------------------------------------------
+    # CapEx Intensity
+    # ----------------------------------------------------
 
-    df["capex_intensity_pct"] = df.apply(
-        lambda x: capex_intensity(
-            x["investing_activity"],
-            x["sales"],
-        ),
+    def get_capex_value(row):
+
+        result = capex_intensity(
+            row["investing_activity"],
+            row["sales"],
+        )
+
+        if result is None:
+            return pd.Series([None, None])
+
+        return pd.Series(result)
+
+    df[
+        [
+            "capex_intensity_pct",
+            "capex_label",
+        ]
+    ] = df.apply(
+        get_capex_value,
         axis=1,
     )
 
@@ -215,11 +232,49 @@ def compute_ratios(df):
     # CAGR Columns
     # ----------------------------------------------------
 
+    df = df.sort_values(
+        ["company_id", "year"]
+    ).reset_index(drop=True)
+
     df["revenue_cagr_5yr"] = None
     df["pat_cagr_5yr"] = None
     df["eps_cagr_5yr"] = None
 
+    for company in df["company_id"].unique():
+
+        idx = df[df["company_id"] == company].index.tolist()
+
+        if len(idx) < 6:
+            continue
+
+        for i in range(5, len(idx)):
+
+            current = idx[i]
+            previous = idx[i - 5]
+
+            value, _ = calculate_cagr(
+                df.loc[previous, "sales"],
+                df.loc[current, "sales"],
+                5,
+            )
+            df.loc[current, "revenue_cagr_5yr"] = value
+
+            value, _ = calculate_cagr(
+                df.loc[previous, "net_profit"],
+                df.loc[current, "net_profit"],
+                5,
+            )
+            df.loc[current, "pat_cagr_5yr"] = value
+
+            value, _ = calculate_cagr(
+                df.loc[previous, "eps"],
+                df.loc[current, "eps"],
+                5,
+            )
+            df.loc[current, "eps_cagr_5yr"] = value
+
     return df
+
 def save_to_database(conn, df):
 
     final_df = df[
@@ -273,7 +328,6 @@ def main():
     df = compute_ratios(df)
 
     save_to_database(conn, df)
-
 
 if __name__ == "__main__":
     main()
